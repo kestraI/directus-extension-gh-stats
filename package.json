@@ -1,0 +1,45 @@
+{
+	"name": "directus-extension-github-repo-stats",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Please enter a description for your extension",
+	"icon": "extension",
+	"dependencies": {
+		"octokit": "^3.1.1"
+	},
+	"directus:extension": {
+		"host": "^10.1.13",
+		"type": "bundle",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"entries": [
+			{
+				"type": "endpoint",
+				"name": "github-repo",
+				"source": "src/github-repo/index.js"
+			},
+			{
+				"type": "panel",
+				"name": "github-panel",
+				"source": "src/github-panel/index.js"
+			}
+		]
+	},
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-bundle"
+	],
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"add": "directus-extension add"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "10.1.13",
+		"vue": "^3.3.7"
+	}
+}
