@@ -12,8 +12,8 @@ Create a personal access token with read access to the repository you want to vi
 
 ## Screenshots
 
-![](./gh-setup.jpeg)
-![](./gh-demo.jpeg)
+![](https://github.com/LaCrecerelle/directus-extension-gh-stats/blob/main/gh-setup.png)
+![](https://github.com/LaCrecerelle/directus-extension-gh-stats/blob/main/gh-demo.png)
 
 ## Collaborators
 
